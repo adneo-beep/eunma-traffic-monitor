@@ -1,12 +1,54 @@
-# eunma-traffic-monitor
+# 은마아파트입구 일대 소통정보 수집
 
-서울시 TOPIS 실시간 교통정보를 주기적으로 수집해 누적 기록하는 저장소입니다.
+서울시 TOPIS 소통정보에서 은마아파트입구 사거리를 지나는 4개 경로의 구간 평균속도를
+정기적으로 수집해 `data/traffic_log.csv`에 누적 저장한다.
 
-- 대상: 강남구 대치동 '은마아파트입구' 교차로 (삼성로, axisCd=217)
-- 수집 방향: axisDirDivCd=1(상행), axisDirDivCd=2(하행)
-- 데이터: `data/traffic_log.csv`
-- 오류 기록: `data/errors.log`
+## 수집 경로
 
-## CSV 컬럼
+| 경로 | 도로 | 방향 | 구간 |
+|---|---|---|---|
+| 1 | 도곡로 | 상행 | 한티역 → 은마아파트입구 → 대치동우성아파트 |
+| 2 | 도곡로 | 하행 | 대치동우성아파트 → 은마아파트입구 → 한티역 |
+| 3 | 삼성로 | 상행 | 대치사거리 → 은마아파트입구 → 대치역 |
+| 4 | 삼성로 | 하행 | 대치역 → 은마아파트입구 → 대치사거리 |
 
-`timestamp_kst,axisDirDivCd,axisDirDivNm,stNodeNm,edNodeNm,speed,trfClsNm`
+경로당 2개 구간씩, 1회 실행에 8행이 쌓인다.
+
+## 실행 주기
+
+GitHub Actions가 **KST 16:00 ~ 23:00 사이 매시 정각과 30분**에 실행한다 (하루 15회).
+GitHub의 예약 실행은 혼잡 시간대에 수 분~수십 분 지연될 수 있으므로, 기록된
+`timestamp_kst`는 워크플로 예정 시각이 아니라 실제 API 호출 시각이다.
+
+수동 실행은 Actions 탭의 `Run workflow` 버튼으로 한다.
+
+## CSV 형식
+
+`data/traffic_log.csv`
+
+| 컬럼 | 설명 |
+|---|---|
+| timestamp_kst | API 호출 시각 (KST, 분 단위) |
+| axisNm | 도로명 — 도곡로 / 삼성로 |
+| axisDirDivCd | 방향코드 — 1(상행) / 2(하행) |
+| axisDirDivNm | 방향명 |
+| stNodeNm / edNodeNm | 구간 시작·종료 지점 |
+| speed | 구간 평균속도 (km/h) |
+| trfClsNm | 소통상태 — 원활 / 서행 / 정체 |
+
+기존 로그는 삼성로만 수집해 `axisNm` 컬럼이 없었다. 도곡로가 추가되면서 이 컬럼이
+생겼고, 이전 행들은 모두 삼성로이므로 그 값으로 채워 넣었다.
+
+## 데이터 출처와 갱신 주기
+
+TOPIS `selectRoadDetailList.do` 엔드포인트를 직접 호출한다. 일반도로 소통정보는
+서울시 카드택시 GPS를 기반으로 **5분 단위** 구간속도로 산출된다. 따라서 30분 간격
+수집은 서로 다른 5분 구간의 스냅샷을 뽑는 셈이다.
+
+## 로컬 실행
+
+```bash
+python collect_topis.py
+```
+
+표준 라이브러리만 사용하므로 별도 설치가 필요 없다.
