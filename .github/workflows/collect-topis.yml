@@ -36,6 +36,11 @@ jobs:
       - name: 소통정보 수집
         run: python collect_topis.py
 
+      # 대조군은 부가 관측이므로 실패해도 본 수집 결과를 버리지 않는다.
+      - name: 대조군 수집
+        continue-on-error: true
+        run: python collect_control.py
+
       - name: 결과 커밋
         run: |
           git config user.name  "github-actions[bot]"
