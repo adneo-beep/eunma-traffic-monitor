@@ -22,3 +22,4 @@
 2026-08-14 23:50 axisDirDivCd=2 요청 실패 (curl exit 35, SSL connect error, HTTP 000)
 2026-08-15 18:08 axisDirDivCd=1 요청 실패 (HTTP 000, connection error) - 재시도 없이 종료
 2026-08-16 16:41 axisDirDivCd=1 요청 실패 (HTTP 200, 빈 응답) - 재시도 없이 종료
+2026-08-16 22:14 axisDirDivCd=2 요청 실패 (HTTP 200, 빈 응답) - 재시도 없이 종료
