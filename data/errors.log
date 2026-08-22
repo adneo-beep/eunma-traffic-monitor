@@ -41,3 +41,4 @@
 2026-08-22 17:08 KST axisDirDivCd=2 (axisCd=217) 요청 실패 (HTTP 200 추정, 빈 응답) - 재시도 없이 종료
 2026-08-22 19:40 KST axisDirDivCd=2 요청 실패 (curl exit 35, HTTP 000, SSL connect error) - 재시도 없이 종료
 2026-08-22 22:09 KST axisDirDivCd=2 요청 실패 (curl exit 35, HTTP 000, SSL connect error) - 재시도 없이 종료
+2026-08-22 23:08 KST axisDirDivCd=2 요청 실패 (curl exit 35, HTTP 000, SSL connect error) - 재시도 없이 종료
