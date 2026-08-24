@@ -46,3 +46,4 @@
 2026-08-23 21:39 axisDirDivCd=2 응답 없음(빈 응답) - selectRoadDetailList.do 호출 실패
 2026-08-23 22:40 KST - TOPIS axisDirDivCd=2 요청 실패 (curl exit 35, SSL connect error, HTTP_STATUS:000)
 2026-08-24 16:15 KST - TOPIS axisDirDivCd=2 요청 실패 (curl exit 35, SSL connect error, HTTP_STATUS:000) - 재시도 없이 종료
+2026-08-24 18:09 KST - TOPIS axisDirDivCd=2 요청 실패 (curl exit 1, HTTP_STATUS:000) - 재시도 없이 종료
