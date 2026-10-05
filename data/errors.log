@@ -73,3 +73,4 @@
 2026-10-04 23:50 KST axisDirDivCd=1 (axisCd=217) 요청 실패 - 연결 오류(HTTP_STATUS:000), axisDirDivCd=2 요청 실패 - HTTP_STATUS:302(비정상 응답), 재시도 없이 종료
 2026-10-05 16:48 KST axisDirDivCd=2 (axisCd=217) 요청 실패 - HTTP_STATUS:302(비정상 응답), 재시도 없이 종료
 2026-10-05 17:04 KST axisDirDivCd=2 (axisCd=217) 요청 실패 - HTTP_STATUS:302(비정상 응답), 재시도 없이 종료
+2026-10-05 19:52 KST axisDirDivCd=2 (axisCd=217) 요청 실패 - 연결 오류(HTTP_STATUS:000), 재시도 없이 종료
