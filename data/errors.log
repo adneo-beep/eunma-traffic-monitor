@@ -79,3 +79,4 @@
 2026-10-06 17:04 KST axisDirDivCd=1 (axisCd=217) 요청 실패 - 연결 오류(curl exit 35, SSL_ERROR_SYSCALL, HTTP_STATUS:000), 재시도 없이 종료
 2026-10-06 17:48 KST axisDirDivCd=2 (axisCd=217) 요청 실패 - 연결 오류(curl exit 35, SSL_ERROR_SYSCALL, HTTP_STATUS:000), 재시도 없이 종료
 2026-10-06 18:03 KST axisDirDivCd=1 (axisCd=217) 요청 실패 - 연결 오류(curl exit 35, SSL_ERROR_SYSCALL, HTTP_STATUS:000), axisDirDivCd=2 요청 실패 - 연결 오류(curl exit 35, SSL_ERROR_SYSCALL, HTTP_STATUS:000), 재시도 없이 종료
+2026-10-07 22:50 KST axisDirDivCd=1 (axisCd=217) 요청 실패 - 연결 오류(curl exit 35, SSL_ERROR_SYSCALL, HTTP_STATUS:000), 재시도 없이 종료
