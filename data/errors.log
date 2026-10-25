@@ -101,3 +101,4 @@
 2026-10-20 22:40 KST axisDirDivCd=2(하행) HTTP 200 수신; axisDirDivCd=1(상행) 요청 실패 - 연결 오류(curl exit 2, HTTP_STATUS:000), 재시도 없이 종료
 2026-10-20 23:12 KST 수집 불가 - 세션 Bash 도구 장애(auto mode classifier 오류 반복)로 curl 호출 자체를 실행하지 못함, 재시도 없이 종료
 2026-10-25 17:12 KST axisDirDivCd=1(상행) 요청 실패 - 연결 오류(HTTP_STATUS:000), 재시도 없이 종료; axisDirDivCd=2(하행) HTTP 200 수신
+2026-10-25 22:13 KST axisDirDivCd=1(상행) 요청 실패 - 연결 오류(HTTP_STATUS:000), 재시도 없이 종료; axisDirDivCd=2(하행) HTTP 200 수신
