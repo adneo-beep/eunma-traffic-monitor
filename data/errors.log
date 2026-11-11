@@ -157,3 +157,4 @@
 [2026-11-10 23:42 KST] axisCd=217 axisDirDivCd=1(상행) HTTP 200 수신; axisCd=217 axisDirDivCd=2(하행) 요청 실패 - 연결 오류(curl exit 35, Recv failure: Connection reset by peer, HTTP_STATUS:000), 재시도 없이 종료
 [2026-11-11 18:41 KST] axisCd=217 axisDirDivCd=1(상행) 요청 실패 - 연결 오류(curl exit 28/35, HTTP_STATUS:000); axisCd=217 axisDirDivCd=2(하행) HTTP 200 수신, 재시도 없이 종료
 [2026-11-11 19:11 KST] axisCd=217 axisDirDivCd=1(상행) 요청 실패 - 연결 오류(curl exit 35, ws_closed_mid_exchange, HTTP_STATUS:000); axisCd=217 axisDirDivCd=2(하행) 요청 실패 - 연결 오류(curl exit 35, ws_closed_mid_exchange, HTTP_STATUS:000), 재시도 없이 종료
+[2026-11-11 19:40 KST] axisCd=217 axisDirDivCd=1(상행) HTTP 200 수신(size=2660); axisCd=217 axisDirDivCd=2(하행) 요청 실패 - 연결 오류(curl exit 35, ws_closed_mid_exchange, HTTP_STATUS:000), 재시도 없이 종료
