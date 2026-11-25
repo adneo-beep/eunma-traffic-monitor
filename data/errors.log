@@ -202,3 +202,4 @@
 2026-11-24 18:11 KST - TOPIS API 요청 실패: axisCd=217 axisDirDivCd=1(상행) HTTP 200 수신; axisDirDivCd=2(하행) 요청 실패 - 연결 오류(curl exit 35, HTTP_STATUS:000, ws_closed_mid_exchange via agent proxy); 재시도 없이 수집 중단
 2026-11-24 19:11 KST - TOPIS API 요청 실패: axisCd=217 axisDirDivCd=1(상행) 요청 실패 - 연결 오류(curl exit 28, HTTP_STATUS:000, 응답 없음 via agent proxy); axisDirDivCd=2(하행)는 HTTP 200 수신; 재시도 없이 수집 중단
 2026-11-24 19:40 KST - TOPIS API 요청 실패: axisCd=217 axisDirDivCd=1(상행) HTTP 200 수신; axisDirDivCd=2(하행) 요청 실패 - 연결 오류(curl exit 35, HTTP_STATUS:000, ws_closed_mid_exchange via agent proxy); 재시도 없이 수집 중단
+2026-11-25 20:40 KST - TOPIS API 요청 실패: axisCd=217 axisDirDivCd=1(상행) 요청 실패 - 연결 오류(curl exit 0, HTTP_STATUS:000, 응답 없음 via agent proxy); axisDirDivCd=2(하행)는 HTTP 200 수신; 재시도 없이 수집 중단
