@@ -214,3 +214,4 @@
 [2026-11-28 16:11] axisDirDivCd=1,2 요청 모두 실패 (curl exit 35, HTTP_STATUS:000, ws_closed_mid_exchange via agent proxy) - 재시도 없이 수집 중단
 [2026-11-28 17:40] axisDirDivCd=2 요청 실패 (curl exit 35, HTTP_STATUS:000, connection error via agent proxy) - axisDirDivCd=1은 HTTP 200 수신; 재시도 없이 수집 중단
 [2026-11-28 19:40] axisDirDivCd=2 요청 실패 (curl exit 35, HTTP_STATUS:000, ws_closed_mid_exchange via agent proxy) - axisDirDivCd=1은 HTTP 200 수신; 재시도 없이 수집 중단
+[2026-11-28 21:14] axisDirDivCd=1 요청 실패 (HTTP_STATUS:000, connection error via agent proxy) - axisDirDivCd=2는 HTTP 200 수신; 재시도 없이 수집 중단
